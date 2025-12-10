@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "es2016",                     // Set the JavaScript version for emitted code
+    "module": "esnext",                      // Use ESNext module system (modern JavaScript)
+    "jsx": "react-jsx",                      // Enable JSX with the React 17+ JSX Transform
+    "lib": ["dom", "es2016"],                // Ensure compatibility with DOM and ES6 features
+    "esModuleInterop": true,                 // Enable interoperability between CommonJS and ES Modules
+    "strict": true,                          // Enable strict type-checking
+    "skipLibCheck": true,                    // Skip type checking for declaration files for faster compilation
+    "forceConsistentCasingInFileNames": true,// Ensure consistent casing in imports
+    "moduleResolution": "node",              // Use Node.js-style module resolution
+    "resolveJsonModule": true,               // Allow importing JSON files
+    "allowSyntheticDefaultImports": true     // Allow default imports from modules without a default export
+  },
+  "include": [
+    "src/**/*"                               // Include all files in the src folder
+  ],
+  "exclude": [
+    "node_modules"                           // Exclude node_modules from type checking
+  ]
+}
